@@ -1,0 +1,627 @@
+diff --git a/NotasSwiftData.xcodeproj/project.pbxproj b/NotasSwiftData.xcodeproj/project.pbxproj
+index fec553e..14e1334 100644
+--- a/NotasSwiftData.xcodeproj/project.pbxproj
++++ b/NotasSwiftData.xcodeproj/project.pbxproj
+@@ -3,22 +3,38 @@
+ 	archiveVersion = 1;
+ 	classes = {
+ 	};
+-	objectVersion = 56;
++	objectVersion = 60;
+ 	objects = {
+ 
+ /* Begin PBXBuildFile section */
++		6E9E5B5F2AF8505C001B44F6 /* Custon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E5B5E2AF8505C001B44F6 /* Custon.swift */; };
+ 		6EA7E21C2AF08056004EEC1D /* NotasSwiftDataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7E21B2AF08056004EEC1D /* NotasSwiftDataApp.swift */; };
+ 		6EA7E21E2AF08056004EEC1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7E21D2AF08056004EEC1D /* ContentView.swift */; };
+ 		6EA7E2202AF08057004EEC1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA7E21F2AF08057004EEC1D /* Assets.xcassets */; };
+ 		6EA7E2232AF08057004EEC1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EA7E2222AF08057004EEC1D /* Preview Assets.xcassets */; };
++		6EA7E22B2AF0807E004EEC1D /* PersitenciaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7E22A2AF0807E004EEC1D /* PersitenciaModel.swift */; };
++		6EA7E22E2AF081AA004EEC1D /* ViewModell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7E22D2AF081AA004EEC1D /* ViewModell.swift */; };
++		6EA7E2312AF08C7F004EEC1D /* ListNotasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7E2302AF08C7F004EEC1D /* ListNotasView.swift */; };
++		6EA7E2332AF08E2A004EEC1D /* AddNotasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7E2322AF08E2A004EEC1D /* AddNotasView.swift */; };
++		6EE4964F2AF1A51800E8B54D /* NotasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4964E2AF1A51800E8B54D /* NotasView.swift */; };
++		6EE496512AF1AEDA00E8B54D /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE496502AF1AEDA00E8B54D /* EditView.swift */; };
++		6EE496532AF1D13F00E8B54D /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE496522AF1D13F00E8B54D /* Home.swift */; };
+ /* End PBXBuildFile section */
+ 
+ /* Begin PBXFileReference section */
++		6E9E5B5E2AF8505C001B44F6 /* Custon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custon.swift; sourceTree = "<group>"; };
+ 		6EA7E2182AF08056004EEC1D /* NotasSwiftData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotasSwiftData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+ 		6EA7E21B2AF08056004EEC1D /* NotasSwiftDataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasSwiftDataApp.swift; sourceTree = "<group>"; };
+ 		6EA7E21D2AF08056004EEC1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+ 		6EA7E21F2AF08057004EEC1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+ 		6EA7E2222AF08057004EEC1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
++		6EA7E22A2AF0807E004EEC1D /* PersitenciaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersitenciaModel.swift; sourceTree = "<group>"; };
++		6EA7E22D2AF081AA004EEC1D /* ViewModell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModell.swift; sourceTree = "<group>"; };
++		6EA7E2302AF08C7F004EEC1D /* ListNotasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotasView.swift; sourceTree = "<group>"; };
++		6EA7E2322AF08E2A004EEC1D /* AddNotasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotasView.swift; sourceTree = "<group>"; };
++		6EE4964E2AF1A51800E8B54D /* NotasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotasView.swift; sourceTree = "<group>"; };
++		6EE496502AF1AEDA00E8B54D /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
++		6EE496522AF1D13F00E8B54D /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+ /* End PBXFileReference section */
+ 
+ /* Begin PBXFrameworksBuildPhase section */
+@@ -51,6 +67,8 @@
+ 		6EA7E21A2AF08056004EEC1D /* NotasSwiftData */ = {
+ 			isa = PBXGroup;
+ 			children = (
++				6EA7E22F2AF08C34004EEC1D /* View */,
++				6EA7E2292AF08062004EEC1D /* Model */,
+ 				6EA7E21B2AF08056004EEC1D /* NotasSwiftDataApp.swift */,
+ 				6EA7E21D2AF08056004EEC1D /* ContentView.swift */,
+ 				6EA7E21F2AF08057004EEC1D /* Assets.xcassets */,
+@@ -67,6 +85,28 @@
+ 			path = "Preview Content";
+ 			sourceTree = "<group>";
+ 		};
++		6EA7E2292AF08062004EEC1D /* Model */ = {
++			isa = PBXGroup;
++			children = (
++				6EA7E22D2AF081AA004EEC1D /* ViewModell.swift */,
++				6EA7E22A2AF0807E004EEC1D /* PersitenciaModel.swift */,
++			);
++			path = Model;
++			sourceTree = "<group>";
++		};
++		6EA7E22F2AF08C34004EEC1D /* View */ = {
++			isa = PBXGroup;
++			children = (
++				6EA7E2302AF08C7F004EEC1D /* ListNotasView.swift */,
++				6EA7E2322AF08E2A004EEC1D /* AddNotasView.swift */,
++				6EE4964E2AF1A51800E8B54D /* NotasView.swift */,
++				6EE496502AF1AEDA00E8B54D /* EditView.swift */,
++				6EE496522AF1D13F00E8B54D /* Home.swift */,
++				6E9E5B5E2AF8505C001B44F6 /* Custon.swift */,
++			);
++			path = View;
++			sourceTree = "<group>";
++		};
+ /* End PBXGroup section */
+ 
+ /* Begin PBXNativeTarget section */
+@@ -103,7 +143,7 @@
+ 				};
+ 			};
+ 			buildConfigurationList = 6EA7E2132AF08056004EEC1D /* Build configuration list for PBXProject "NotasSwiftData" */;
+-			compatibilityVersion = "Xcode 14.0";
++			compatibilityVersion = "Xcode 15.0";
+ 			developmentRegion = en;
+ 			hasScannedForEncodings = 0;
+ 			knownRegions = (
+@@ -139,6 +179,14 @@
+ 			files = (
+ 				6EA7E21E2AF08056004EEC1D /* ContentView.swift in Sources */,
+ 				6EA7E21C2AF08056004EEC1D /* NotasSwiftDataApp.swift in Sources */,
++				6EE496512AF1AEDA00E8B54D /* EditView.swift in Sources */,
++				6EA7E22E2AF081AA004EEC1D /* ViewModell.swift in Sources */,
++				6EE496532AF1D13F00E8B54D /* Home.swift in Sources */,
++				6EA7E2312AF08C7F004EEC1D /* ListNotasView.swift in Sources */,
++				6EA7E2332AF08E2A004EEC1D /* AddNotasView.swift in Sources */,
++				6EE4964F2AF1A51800E8B54D /* NotasView.swift in Sources */,
++				6EA7E22B2AF0807E004EEC1D /* PersitenciaModel.swift in Sources */,
++				6E9E5B5F2AF8505C001B44F6 /* Custon.swift in Sources */,
+ 			);
+ 			runOnlyForDeploymentPostprocessing = 0;
+ 		};
+diff --git a/NotasSwiftData/ContentView.swift b/NotasSwiftData/ContentView.swift
+index 410a3f1..a6a1dd6 100644
+--- a/NotasSwiftData/ContentView.swift
++++ b/NotasSwiftData/ContentView.swift
+@@ -9,16 +9,10 @@ import SwiftUI
+ 
+ struct ContentView: View {
+     var body: some View {
+-        VStack {
+-            Image(systemName: "globe")
+-                .imageScale(.large)
+-                .foregroundStyle(.tint)
+-            Text("Hello, world!")
+-        }
+-        .padding()
++        ListNotasView()
+     }
+ }
+-
+ #Preview {
+     ContentView()
++    
+ }
+diff --git a/NotasSwiftData/Model/PersitenciaModel.swift b/NotasSwiftData/Model/PersitenciaModel.swift
+new file mode 100644
+index 0000000..38d577a
+--- /dev/null
++++ b/NotasSwiftData/Model/PersitenciaModel.swift
+@@ -0,0 +1,29 @@
++//
++//  PersitenciaModel.swift
++//  NotasSwiftData
++//
++//  Created by Esteban Perez Castillejo on 31/10/23.
++//
++
++import Foundation
++import SwiftData
++
++@Model
++class PersitenciaModel {
++    @Attribute(.unique) var id: String
++    var orden: Int16
++    var titulo: String
++    var Texto: String
++
++    init(id: String = UUID().uuidString, orden: Int16 = 0 ,titulo: String =  "", Texto: String = "") {
++        self.id = id
++        self.orden = orden
++        self.titulo = titulo
++        self.Texto = Texto
++    }
++}
++
++
++
++
++
+diff --git a/NotasSwiftData/Model/ViewModell.swift b/NotasSwiftData/Model/ViewModell.swift
+new file mode 100644
+index 0000000..68b0061
+--- /dev/null
++++ b/NotasSwiftData/Model/ViewModell.swift
+@@ -0,0 +1,86 @@
++//
++//  ViiewControl.swift
++//  NotasSwiftData
++//
++//  Created by Esteban Perez Castillejo on 31/10/23.
++//
++
++import SwiftUI
++import SwiftData
++
++@Observable
++class ViewControl: ObservableObject {
++    let container = try! ModelContainer(for: PersitenciaModel.self)
++    
++    @MainActor
++    var context: ModelContext{
++        container.mainContext
++    }
++    
++   
++    var notas: [PersitenciaModel] = []
++    
++    @MainActor
++    func getNota(){
++        let fetchDescripttor = FetchDescriptor(predicate: nil, sortBy: [SortDescriptor<PersitenciaModel>(\PersitenciaModel.orden)])
++        do{
++            notas = try context.fetch(fetchDescripttor)
++        }catch let error as NSError{
++            print("algono salio mal", error.localizedDescription)
++        }
++    }
++    
++    @MainActor
++    func move(from source: IndexSet, to destination: Int) {
++          var items = notas
++          items.move(fromOffsets: source, toOffset: destination)
++          for i in 0..<items.count {
++              items[i].orden = Int16(i)
++          }
++          notas = items
++      }
++    
++    @MainActor
++    func addNotas(titulo: String, texto: String){
++        let newNotas = PersitenciaModel(id: UUID().uuidString, titulo: titulo , Texto: texto)
++        context.insert(newNotas)
++        do{
++            try context.save()
++            notas = []
++            getNota()
++            print("Guardado con exito")
++        }catch let error as NSError{
++            print("Algo salio mal", error.localizedDescription)
++        }
++    }
++    
++    @MainActor
++    func editNotas(titulo: String, texto: String){
++        _ = PersitenciaModel(titulo: titulo, Texto: texto)
++        do{
++            try context.save()
++            notas = []
++            getNota()
++            print("Guardado con exito")
++        }catch let error as NSError{
++            print("Algo salio mal", error.localizedDescription)
++        }
++    }
++    
++    @MainActor
++    func deleteNotas(){
++        notas.forEach{
++            context.delete($0)
++        }
++        
++        do{
++            try context.save()
++            notas = []
++            getNota()
++            print("Eliminado con exito")
++        }catch let error as NSError{
++            print("Algo salio mal", error.localizedDescription)
++        }
++    }
++    
++}
+diff --git a/NotasSwiftData/NotasSwiftDataApp.swift b/NotasSwiftData/NotasSwiftDataApp.swift
+index 6004355..12effaa 100644
+--- a/NotasSwiftData/NotasSwiftDataApp.swift
++++ b/NotasSwiftData/NotasSwiftDataApp.swift
+@@ -6,12 +6,14 @@
+ //
+ 
+ import SwiftUI
++import SwiftData
+ 
+ @main
+ struct NotasSwiftDataApp: App {
+     var body: some Scene {
+         WindowGroup {
+             ContentView()
++                .environmentObject(ViewControl())
+         }
+     }
+ }
+diff --git a/NotasSwiftData/View/AddNotasView.swift b/NotasSwiftData/View/AddNotasView.swift
+new file mode 100644
+index 0000000..2a62864
+--- /dev/null
++++ b/NotasSwiftData/View/AddNotasView.swift
+@@ -0,0 +1,34 @@
++//
++//  AddNotasView.swift
++//  NotasSwiftData
++//
++//  Created by Esteban Perez Castillejo on 31/10/23.
++//
++
++import SwiftUI
++
++struct AddNotasView: View {
++    
++    @State private var titulo = ""
++    @State private var texto = "" 
++    
++    @Binding var notas: [PersitenciaModel]
++    @Environment (ViewControl.self) var viewControl
++    @Environment (\.dismiss) var dismiss
++    var body: some View {
++        ZStack{
++                LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: .top)
++                    .edgesIgnoringSafeArea(.all)
++            Form{
++                TextField("Titulo de nota", text: $titulo)
++                TextEditor(text: $texto)
++                Button(action: {
++                    viewControl.addNotas(titulo: titulo, texto: texto)
++                    dismiss()
++                }, label: {
++                    Text("Guardar")
++                })
++            }
++        }
++    }
++}
+diff --git a/NotasSwiftData/View/Custon.swift b/NotasSwiftData/View/Custon.swift
+new file mode 100644
+index 0000000..583daac
+--- /dev/null
++++ b/NotasSwiftData/View/Custon.swift
+@@ -0,0 +1,23 @@
++//
++//  Custon.swift
++//  NotasSwiftData
++//
++//  Created by Esteban Perez Castillejo on 5/11/23.
++//
++
++import SwiftUI
++
++// Cambia y modifica la apariencia de los textos
++struct CustomText: ViewModifier {
++    func body(content: Content) -> some View {
++        content
++            .font(.custom("Cochin", size: 20)).bold()// Cambia el tamaño y el estilo
++           // .foregroundColor(Color.red)
++            .padding(.leading, 40)
++            .padding(.trailing, 10)
++            .padding(14)
++            .background(Color.white)
++            .cornerRadius(15)
++            .accentColor(.red)
++    }
++}
+diff --git a/NotasSwiftData/View/EditView.swift b/NotasSwiftData/View/EditView.swift
+new file mode 100644
+index 0000000..fcef170
+--- /dev/null
++++ b/NotasSwiftData/View/EditView.swift
+@@ -0,0 +1,30 @@
++//
++//  EditView.swift
++//  NotasSwiftData
++//
++//  Created by Esteban Perez Castillejo on 31/10/23.
++//
++
++import SwiftUI
++import SwiftData
++
++struct EditView: View {
++    
++    @Bindable var isNotas = PersitenciaModel()
++    
++    @Environment (ViewControl.self) var viewControl
++    @Environment (\.dismiss) var dismiss
++    
++    var body: some View {
++        Form{
++            TextField("Titulo de nota", text: $isNotas.titulo)
++            TextEditor(text: $isNotas.Texto)
++            Button(action: {
++                viewControl.editNotas(titulo: isNotas.titulo, texto: isNotas.Texto)
++                dismiss()
++            }, label: {
++                Text("Guardar")
++            })
++        }
++    }
++}
+diff --git a/NotasSwiftData/View/Home.swift b/NotasSwiftData/View/Home.swift
+new file mode 100644
+index 0000000..d1ff347
+--- /dev/null
++++ b/NotasSwiftData/View/Home.swift
+@@ -0,0 +1,34 @@
++//
++//  Home.swift
++//  NotasSwiftData
++//
++//  Created by Esteban Perez Castillejo on 1/11/23.
++//
++
++import SwiftUI
++
++struct Home: View {
++    var texto = "Hola"
++    
++    var body: some View {
++        NavigationStack {
++            ZStack {
++                LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing)
++                    .edgesIgnoringSafeArea(.all)
++                
++                List {
++                    Text("Placeholder")
++                        .listRowBackground(Color.clear)
++                        .frame(maxWidth: .infinity, alignment: .leading)
++                        .padding(10)
++                        .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color.gray]), startPoint: .leading, endPoint: .trailing))
++                        .cornerRadius(10) // Fondo degradado y esquinas redondeadas
++                        .listRowSeparator(.hidden)
++                }
++                .listStyle(PlainListStyle())
++            }
++        }
++    }
++}
++
++
+diff --git a/NotasSwiftData/View/ListNotasView.swift b/NotasSwiftData/View/ListNotasView.swift
+new file mode 100644
+index 0000000..1d199e3
+--- /dev/null
++++ b/NotasSwiftData/View/ListNotasView.swift
+@@ -0,0 +1,149 @@
++//
++//  ListNotasView.swift
++//  NotasSwiftData
++//
++//  Created by Esteban Perez Castillejo on 31/10/23.
++//
++
++import SwiftUI
++import SwiftData
++
++
++struct ListNotasView: View {
++    
++    @State private var show = false
++    @State private var show2 = false
++    @State var isSeeker: String = ""
++    
++    @State private var gradientColors: [Color] = [Color.red, Color.blue] // Inicializa con los colores iniciales del gradiente
++    
++    @State private var notas: [PersitenciaModel] = []
++    
++    @Environment (ViewControl.self) var viewControl
++    
++      @Query(filter: #Predicate<PersitenciaModel>{$0.titulo.contains("")}, sort: \PersitenciaModel.titulo, order: .forward) private var result: [PersitenciaModel]
++    
++    var filterResult: [PersitenciaModel] {
++        if isSeeker.isEmpty{
++            return Array(viewControl.notas)
++        }else{
++            return viewControl.notas.filter{ result in
++                let titulo = result.titulo.localizedCaseInsensitiveContains(isSeeker)
++                return titulo
++            }
++        }
++    }
++    
++    var body: some View {
++        
++        NavigationStack{
++            
++                ZStack{
++                    LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: /*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/, endPoint: .top)
++                        .edgesIgnoringSafeArea(.all)
++                    Image(systemName: "swiftdata").font(.system(size: 300))
++                    VStack{
++                        VStack(alignment: .leading){
++                            Text("Notas con SwiftData")
++                                .font(.custom("Cochin", size: 35)).bold()
++                                .foregroundColor(Color.white)
++                                .shadow(color: .black , radius: 3 ,  x: 2 , y: 5)
++                                .padding()
++                            
++                            ZStack{
++                                
++                                TextField("Buscar ...", text: $isSeeker)
++                                    .modifier(CustomText())
++                                Image(systemName: "magnifyingglass")
++                                    .offset(x: -150)
++                            }
++                            
++                        }.padding()
++                        
++                        List{
++                            
++                            ForEach(filterResult, id:\.self){ item in
++                                NavigationLink(value: item){
++                                    Text(item.titulo )
++                                        .font(.custom("Cochin", size: 20)).bold()
++                                        .padding()
++                                }
++                                .listRowSeparator(.hidden)
++                                .swipeActions{
++                                    Button(role: .destructive){
++                                        withAnimation{
++                                            viewControl.context.delete(item)
++                                        }
++                                    } label: {
++                                        Image(systemName: "trash")
++                                    }
++                                    
++                                }
++                                
++                                
++                            }
++                            .onMove(perform: { indices, newOffset in
++                                viewControl.move(from: indices, to: newOffset)
++                                
++                            })
++                            .listRowBackground(Color.clear)
++                            .frame(maxWidth: .infinity, alignment: .leading)
++                            .padding(10)
++                            .background(LinearGradient(gradient: Gradient(colors: [Color.white, Color.gray]), startPoint: .leading, endPoint: .trailing))
++                            .cornerRadius(10) // Fondo degradado y esquinas redondeadas
++                            
++                        }.listStyle(PlainListStyle())
++                          //  .navigationTitle("Notas con SwiftData")
++                          
++                            .navigationDestination(for: PersitenciaModel.self, destination: { nota in
++                                NotasView(db: nota)
++                            })
++                        
++                            .toolbar{
++                                ToolbarItem{
++                                    Button(action: {
++                                        show.toggle()
++                                    }, label: {
++                                        Image(systemName: "plus.circle").bold()
++                                            .foregroundColor(Color.white)
++                                            .shadow(color: .black , radius: 3 ,  x: 2 , y: 5)
++                                    })
++                                }
++                            }
++                            .toolbar{
++                                ToolbarItem (placement: .navigation){
++                                    Menu(content: {
++                                        Button(action: {
++                                            //...
++                                        }, label: {
++                                            Text("item 1")
++                                        })
++                                        
++                                        Button(action: {
++                                            //...
++                                        }, label: {
++                                            Text("item 2")
++                                        })
++                                        
++                                        
++                                    }, label: {
++                                        Image(systemName: "gear")
++                                            .foregroundColor(Color.white)
++                                            .shadow(color: .black , radius: 3 ,  x: 2 , y: 5)
++                                  })
++                                }
++                            }
++                            .sheet(isPresented: $show, content: {
++                                NavigationStack{
++                                    AddNotasView(notas: $notas)
++                                }.presentationDetents([.medium])
++                            })
++                            .onAppear{
++                                viewControl.getNota()
++                            }
++                    }
++                }
++            
++            }
++    }
++}
+diff --git a/NotasSwiftData/View/NotasView.swift b/NotasSwiftData/View/NotasView.swift
+new file mode 100644
+index 0000000..925fe89
+--- /dev/null
++++ b/NotasSwiftData/View/NotasView.swift
+@@ -0,0 +1,46 @@
++//
++//  Notas.swift
++//  NotasSwiftData
++//
++//  Created by Esteban Perez Castillejo on 31/10/23.
++//
++
++import SwiftUI
++import SwiftData
++
++struct NotasView: View {
++    @State private var show = false
++    
++    @Environment (ViewControl.self) var viewControl
++    @Bindable var db: PersitenciaModel
++    var body: some View {
++        ZStack{
++            Image(systemName: "swiftdata").font(.system(size: 300)).opacity(0.1)
++            VStack{
++                Text(db.titulo)
++                    .font(.custom("Cochin", size: 35)).bold()
++                HStack{
++                    Text(db.Texto ).padding()
++                    Spacer()
++                }
++                Spacer()
++            }
++            .sheet(isPresented: $show, content: {
++                NavigationStack{
++                    EditView(isNotas: db)
++                }.presentationDetents([.medium])
++            })
++            .toolbar{
++                ToolbarItem{
++                    Button(action: {
++                        show.toggle()
++                    }, label: {
++                        Text("Editar")
++                        Image(systemName: "pencil")
++                    })
++                }
++            }
++        }
++    }
++}
++
