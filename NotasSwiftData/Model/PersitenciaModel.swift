@@ -2,7 +2,7 @@
 //  PersitenciaModel.swift
 //  NotasSwiftData
 //
-//  Created by Esteban Perez Castillejo on 31/10/23.
+// Created by Lordzzz on 1/11/23.
 //
 
 import Foundation

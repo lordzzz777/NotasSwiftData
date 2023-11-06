@@ -2,7 +2,7 @@
 //  Home.swift
 //  NotasSwiftData
 //
-//  Created by Esteban Perez Castillejo on 1/11/23.
+// Created by Lordzzz on 1/11/23.
 //
 
 import SwiftUI
